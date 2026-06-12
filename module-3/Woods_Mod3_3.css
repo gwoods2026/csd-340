@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.side-by-side-div {
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.bottom-div {
+  width: 100%;
+  margin-top: 60%;
+  float: right;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+ol, ul {
+  font-weight: 300;
+}
+
+.ordered-list {
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+.unordered-list {
+  border: 1px dashed red;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
