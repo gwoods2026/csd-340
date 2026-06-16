@@ -1,0 +1,41 @@
+/* Garrett Woods Module 4.2 */
+
+h1 {
+    text-align: center;
+    color: rgba(98, 71, 133, .8);
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:10%;
+}
+
+#image-gallery h3 {
+    text-align: center;
+    color: rgba(82, 74, 93, .5);
+}
+
+figure {
+    text-align: center;
+    margin:0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(75, 75, 75, 1);
+    margin-top: 8px;
+}
+.index-div {
+  width: 100%;
+  margin-top: 60%;
+  float: right;
+  margin-bottom: 20px;
+  text-align: right;
+}
