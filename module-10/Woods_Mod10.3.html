@@ -1,0 +1,75 @@
+<!-- Garrett Woods Module 10.3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+  <!-- Setting up the functions -->
+  <div>
+    <p id="javaScriptText1" style="width: max-content;">Don't you just hate mosquitoes?</p>
+    <img id="javaScriptImage1" style="width: max-content" src="images/before_mouse_attack.jpg" alt="Picture of a person being happy">
+  </div>
+  <br>
+
+  <div>
+    <p id="javaScriptText2" style="width: max-content";>Do you hear someone knocking?</p>
+    <img id="javaScriptImage2" style="width: max-content" src="images/closed_door.jpg" alt="Picture of a closed door.">
+  </div>
+
+  <script>
+    const img1 = document.getElementById("javaScriptImage1")
+    const txt1 = document.getElementById("javaScriptText1")
+
+    // creates the functions for mousing over and out for the first image as well as the on Click
+    function mouseOver1() {
+      img1.src = "images/mouse_attack.jpg"
+      img1.alt = "A mosquito attacks"
+      txt1.style.color = "blue";
+      txt1.innerText = "Can you try to get the mosquitoe for me, please?"}
+
+    function mouseOut1() {
+      img1.src = "images/before_mouse_attack.jpg";
+      img1.alt = "Picture of a person being happy"
+      txt1.style.color = "black"
+      txt1.innerText = "Don't you just hate mosquitoes?"}
+
+    function imageClick(event) {
+      alert("Thank you for trying")}
+
+  //Sets up the page to look for these events and points it the correct function.
+  img1.addEventListener('mouseover', mouseOver1);
+  img1.addEventListener('mouseout', mouseOut1);
+  txt1.addEventListener('mouseover', mouseOver1);
+  txt1.addEventListener('mouseout', mouseOut1);
+  img1.addEventListener('click', imageClick);
+
+    const img2 = document.getElementById("javaScriptImage2")
+    const txt2 = document.getElementById("javaScriptText2")
+
+    //Creates the functions for the second image and text
+    function mouseOver2() {
+      img2.src = "images/open_door.jpg";
+      img2.alt = "Picture of an open door"
+      txt2.style.color = "green"
+      txt2.innerText = "Must've been the wind"}
+
+    function mouseOut2() {
+      img2.src = "images/closed_door.jpg";
+      img2.alt = "Picture of a closed door"
+      txt2.style.color = "black"
+      txt2.innerText = "Do you hear someone knocking?"}
+
+  //Sets up the page to look for these events and points it the correct function.
+  img2.addEventListener('mouseover', mouseOver2);
+  img2.addEventListener('mouseout', mouseOut2);
+  txt2.addEventListener('mouseover', mouseOver2);
+  txt2.addEventListener('mouseout', mouseOut2);
+  </script>
+
+</body>
+</html>
